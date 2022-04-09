@@ -1,0 +1,13 @@
+1. NPM RUN START
+
+2. Open http://localhost:1234
+
+3. Enter a valid email address into the login field and hit return
+
+4. Go to your email inbox and find the Magic Link email and click the LOG IN
+
+5. This will open up a new tab with your app.
+
+6. Soft refresh the page
+
+7. This should show the Logged in Version of the App.
