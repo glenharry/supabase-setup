@@ -11,3 +11,25 @@
 6. Soft refresh the page
 
 7. This should show the Logged in Version of the App.
+
+@ 3:00 into the video Jack starts to talk about loading the website into Vercel.
+
+CONNECTING TO SUPABASE
+
+1. Create project on SupaBase
+
+2. Get the project API key and the Project Config URL and add them to the .env file in the root directory of the project. Should look like this:
+   REACT_APP_SUPABASE_URL=URLGoesHere
+   REACT_APP_SUPABASE_ANON_KEY=longRandomKeyGoesHere
+
+3. Add the supebaseClient.js file to your src folder. Add this code to it:
+ <!-- 
+ import { createClient } from "@supabase/supabase-js";
+
+const supabaseUrl = process.env.REACT_APP_SUPABASE_URL;
+const supabaseAnonKey = process.env.REACT_APP_SUPABASE_ANON_KEY;
+
+export const supabase = createClient(supabaseUrl, supabaseAnonKey);
+-->
+
+4.

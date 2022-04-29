@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
-import Login from "./login";
-import Messages from "./messages";
-import { supabase } from "./supabaseClient";
-import MessageForm from "./messageForm";
+import Login from "../pages/login";
+import SignUp from "../pages/signUp";
+import { supabase } from "../supabaseClient";
+import Exercises from "../components/exercises";
+import NewExercise from "../components/NewExercise";
+import "../Styles/App.scss";
 
 function App() {
     const [session, setSession] = useState(null);
@@ -19,14 +21,13 @@ function App() {
     if (session && session.user) {
         markup = (
             <div>
-                <Messages />
-                <MessageForm />
+                <NewExercise />
             </div>
         );
     }
     return (
         <div>
-            <h1>Supabase + React</h1>
+            <h1>Supabase + React + Workout</h1>
             {markup}
         </div>
     );

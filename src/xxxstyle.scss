@@ -1,0 +1,29 @@
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.rep-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.input{
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+}
+.set-weight {
+    width: 3rem;
+}
+
+#weight {
+width: 5rem;
+}
+
+.input label {
+    font-size: .75rem;
+}
+

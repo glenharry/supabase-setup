@@ -1,22 +1,27 @@
 {
   "name": "supabase",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
-    "start": "parcel src/index.html",
+    "start": "open http://localhost:1234 && parcel src/index.html",
+    "build": "parcel build src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.4.1",
     "parcel": "^2.4.1",
     "process": "^0.11.10",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "styled-components": "^5.3.5"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^1.33.3"
+    "@supabase/supabase-js": "^1.33.3",
+    "node-sass": "^7.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "description": ""
 }
